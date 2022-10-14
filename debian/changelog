@@ -1,0 +1,52 @@
+node-retape (0.0.3-5) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-tap, node-tape,
+      node-test
+      and nodejs.
+    + node-retape: Drop versioned constraint on node-tape, node-test and
+      nodejs in Depends.
+  * Bump debhelper from old 12 to 13.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Wed, 27 Oct 2021 06:32:01 +0200
+
+node-retape (0.0.3-4) unstable; urgency=medium
+
+  * Move to /usr/share
+  * Update debhelper and policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 20 Sep 2019 22:59:02 +0200
+
+node-retape (0.0.3-3) unstable; urgency=medium
+
+  * Move to salsa
+  * Bump policy and compat (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 01 Jun 2018 15:04:25 +0200
+
+node-retape (0.0.3-2) unstable; urgency=medium
+
+  * Use autopkgtest
+  * Bump policy (no changes).
+  * Move to section javascript
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 05 Oct 2017 12:20:00 +0200
+
+node-retape (0.0.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #859858)
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 08 Apr 2017 11:48:26 +0200

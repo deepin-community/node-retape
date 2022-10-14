@@ -1,0 +1,31 @@
+Source: node-retape
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Bastien Roucariès <rouca@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-tap <!nocheck>
+ , node-tape <!nocheck>
+ , node-test <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-retape
+Vcs-Git: https://salsa.debian.org/js-team/node-retape.git
+Homepage: https://github.com/Gozala/retape
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-retape
+Architecture: all
+Depends: ${misc:Depends}
+ , node-tape
+ , node-test
+ , nodejs
+Description: CommonJS test to tape adapter
+ This module  allow one to use node-tape module for running commonJS
+ test suite (node-test).
+ .
+ You can also mix with this module, commonJS test suite
+ and node-tape test suite.
+ .
+ Node.js is an event-based server-side JavaScript engine.
